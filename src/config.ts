@@ -5,7 +5,7 @@ interface Config {
 }
 
 export const CONFIG: Config = {
-  apiUrl: process.env.PAGEINDEX_API_URL || 'https://chat.pageindex.ai',
+  apiUrl: process.env.PAGEINDEX_API_URL || 'https://app.pageindex.ai',
   debug: process.env.DEBUG === 'true',
   connectionTimeout: parseInt(process.env.CONNECTION_TIMEOUT || '30000', 10),
 };
