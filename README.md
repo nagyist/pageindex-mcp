@@ -24,7 +24,7 @@ Want to chat with long PDFs but hit context limit reached errors? Add your file 
 
 For more information, visit the [PageIndex MCP](https://pageindex.ai/mcp) page.
 
-💡 Looking for a fully hosted experience? Try [**PageIndex Chat**](https://chat.pageindex.ai) 🤖: a human-like document analyst that lets you chat with long PDFs using the same agentic, reasoning-based workflow as PageIndex MCP.
+💡 Looking for a fully hosted experience? Try [**PageIndex App**](https://app.pageindex.ai) 🤖: a human-like document analyst that lets you chat with long PDFs using the same agentic, reasoning-based workflow as PageIndex MCP.
 
 <p align="center">
   <a href="https://pageindex.ai/mcp">
@@ -77,9 +77,9 @@ Connect PageIndex to your agent framework or AI SDK via MCP. Works with [Claude 
 
 For more details, visit the [PageIndex API Dashboard](https://developer.pageindex.ai).
 
-### For PageIndex Chat Users
+### For PageIndex App Users
 
-If you already have a [PageIndex Chat](https://chat.pageindex.ai) account, you can connect your MCP client directly via OAuth.
+If you already have a [PageIndex App](https://app.pageindex.ai) account, you can connect your MCP client directly via OAuth.
 
 **Claude Desktop — One-Click Install:**
 
@@ -92,7 +92,7 @@ Download the `.mcpb` file from [Releases](https://github.com/VectifyAI/pageindex
   "mcpServers": {
     "pageindex": {
       "type": "http",
-      "url": "https://chat.pageindex.ai/mcp"
+      "url": "https://app.pageindex.ai/mcp"
     }
   }
 }
@@ -113,7 +113,7 @@ If you need to upload local PDF files, you can run the local MCP server (require
 }
 ```
 
-For more details, visit [PageIndex Chat](https://chat.pageindex.ai).
+For more details, visit [PageIndex App](https://app.pageindex.ai).
 
 # Related Links
 
