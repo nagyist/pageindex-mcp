@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/VectifyAI/pageindex-mcp/compare/v1.8.1...v1.8.2) (2026-07-25)
+
+
+### Bug Fixes
+
+* **config:** update default API URL to app.pageindex.ai ([fd12851](https://github.com/VectifyAI/pageindex-mcp/commit/fd128517a3f96bbd69b74319953aa9958e72dee1))
+
 ## [1.8.1](https://github.com/VectifyAI/pageindex-mcp/compare/v1.8.0...v1.8.1) (2026-05-28)
 
 
