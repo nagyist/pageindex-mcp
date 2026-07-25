@@ -25,20 +25,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
+      # Must precede setup-node: v5 auto-caches based on the packageManager
+      # field and needs the pnpm binary on PATH to resolve the store path.
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '22'
 
       - name: Upgrade npm for Trusted Publishing
-        run: npm install -g npm@latest
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        run: npm install -g "npm@^12"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile

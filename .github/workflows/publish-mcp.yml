@@ -21,17 +21,19 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
+      # Must precede setup-node: v5 auto-caches based on the packageManager
+      # field and needs the pnpm binary on PATH to resolve the store path.
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
